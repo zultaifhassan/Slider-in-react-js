@@ -12,19 +12,79 @@ import './slider.css';
 import { Navigation } from 'swiper/modules';
 
 export default function App() {
+
   return (
-    <div className='outer-slider'>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </div>
+    <>
+      <div className='outer-slider'>
+        <Swiper className="mySwiper"
+          navigation={true}
+          modules={[Navigation]}
+          slidesPerView={1}
+          spaceBetween={10}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }
+          }>
+          <SwiperSlide>
+            <div className='slider-inner-content'>
+              <img src='/Images/user.png' alt='' />
+              <h1>Hello Zultaif</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+          <SwiperSlide><div className='slider-inner-content'>
+            <img src='/Images/user.png' alt='' />
+            <h1>Hello Zultaif</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+          </div></SwiperSlide>
+        </Swiper>
+      </div>
+    </>
   );
 }

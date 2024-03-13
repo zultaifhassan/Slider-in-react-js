@@ -1,38 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
 .outer-slider {
-    height: 200px;
+    height: 400px;
     position: relative;
-    border: 1px solid green;
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    align-items: center;
 }
 
 .swiper {
-    width: 100%;
+    width: 90%;
     height: 80%;
-    border: 1px solid red;
     position: static;
+    margin: auto;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .swiper-button-next:after {
     position: absolute;
-    top: 90px;
-    right: 10px;
+    top: 168px;
+    right: 100px;
     font-size: 15px;
     background-color: rgb(44, 43, 43);
     height: 30px;
@@ -43,10 +47,14 @@
     color: white;
 }
 
-.swiper-button-prev:after{
+.swiper-button-prev:hover:after {
+    border-radius: 50px;
+}
+
+.swiper-button-prev:after {
     position: absolute;
-    top: 90px;
-    left: 1400px;
+    top: 168px;
+    left: 1500px;
     font-size: 15px;
     background-color: rgb(44, 43, 43);
     height: 30px;
@@ -55,11 +63,31 @@
     align-items: center;
     justify-content: center;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .swiper-button-next:hover:after {
-    background-color: red; 
-    color: #000;
-    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.slider-inner-content {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #fff;
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.slider-inner-content img {
+    height: 100px;
+    width: 100px;
+    top: 0;
+    position: absolute;
+    left: 20px;
+}
+
+.slider-inner-content h1 {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 35px;
 }
