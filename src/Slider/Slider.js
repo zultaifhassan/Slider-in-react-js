@@ -40,7 +40,9 @@ export default function App() {
             <div className='slider-inner-content'>
               <img src='/Images/user.png' alt='' />
               <h1>Hello Zultaif</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley.</p>
             </div>
           </SwiperSlide>
           <SwiperSlide><div className='slider-inner-content'>
