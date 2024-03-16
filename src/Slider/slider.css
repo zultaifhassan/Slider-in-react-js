@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 
@@ -79,6 +79,15 @@
     text-align: left;
     padding: 30px 30px;
     position: relative;
+    border: 1px solid #fff;
+}
+
+.slider-inner-content:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 23px;
+    border: 1px solid rgb(206, 205, 205);
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .slider-inner-content img {
@@ -92,4 +101,11 @@
     font-weight: 500;
     font-size: 35px;
     margin-top: 20px;
+    color: rgb(34, 34, 34);
+}
+
+.slider-inner-content p {
+    text-align: justify;
+    margin-top: 10px;
+    color: rgb(74, 74, 74);
 }
